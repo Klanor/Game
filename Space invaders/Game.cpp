@@ -4,8 +4,6 @@ Clock game::clock;
 int game::NewRandom = 0;
 int game::PastRandom = 0;
 
-
-
 game::game()
 {
 
@@ -16,8 +14,6 @@ game::game()
 	font.loadFromFile("font/future.ttf");
 	txt.setFont(font);
 }
-
-
 
 void game::timeset(float speed)
 {

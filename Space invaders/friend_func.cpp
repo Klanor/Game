@@ -8,11 +8,9 @@ bool crash(MiddleMeteor &m, StarShip &s)
 
 	if ((m.sprite.getPosition().y > 200)&(!m.DestroedMeteor))
 	{
-			/*std::cout << "1X: " << X;
-			std::cout << " 1Y: " << Y << std::endl;*/
-		if ((Y > -m.MeteorOrigin[1] * m.Scale)&(Y < m.MeteorOrigin[1] * m.Scale))
+		if ((Y > ((-m.MeteorOrigin[1] * m.Scale)-20))&(Y < ((m.MeteorOrigin[1] * m.Scale)+20)))
 		{
-			if ((X > -m.MeteorOrigin[0] * m.Scale)&(X < m.MeteorOrigin[0] * m.Scale))
+			if ((X > ((-m.MeteorOrigin[0] * m.Scale)-20))&(X < ((m.MeteorOrigin[0] * m.Scale)+20)))
 			{
 				s.sound.SoundExplBig();
 				m.sprite.setPosition(-100,1000);

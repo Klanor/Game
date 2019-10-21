@@ -65,19 +65,19 @@ bool StarShip::Explosion()
 	if (GameTime < 400)
 	{
 		sprite.setTextureRect(IntRect(0, 110, 62, 55));//big
-		sprite.move(0, -0.3);
+		sprite.move(0, -0.3*game::time);
 		return false;
 	}
 	else if ((GameTime > 400)&(GameTime < 800))
 	{
 		sprite.setTextureRect(IntRect(65, 110, 68, 57));//mid
-		sprite.move(0, -0.2);
+		sprite.move(0, -0.2*game::time);
 		return false;
 	}
 	else if ((GameTime > 800)&(GameTime < 1200))
 	{
 		sprite.setTextureRect(IntRect(141, 110, 54, 48));//sml
-		sprite.move(0, -0.1);
+		sprite.move(0, -0.1*game::time);
 		return false;
 	}
 	else if (GameTime > 1200)
@@ -93,8 +93,7 @@ void StarShip::ShipMove(unsigned int x)
 	{
 		sprite.move(0, -0.2*game::time);
 	}
-
-	if (dx > 0)
+	else if (dx > 0)
 	{
 		dx = dx - 0.007;
 		if (dx < 0)dx = 0;
@@ -102,20 +101,17 @@ void StarShip::ShipMove(unsigned int x)
 
 	border(x);
 
-		if ((Keyboard::isKeyPressed(Keyboard::Left)))
+		if (Keyboard::isKeyPressed(Keyboard::Left))
 		{
 			GoRight = false;
 			dx = 0.4;
-			sprite.move(-dx*game::time, 0);
 		}
-		else if ((Keyboard::isKeyPressed(Keyboard::Right)))
+		else if (Keyboard::isKeyPressed(Keyboard::Right))
 		{
 			GoRight = true;
 			dx = 0.4;
-			sprite.move(dx*game::time, 0);
 		}
 		
-
 		switch (GoRight)
 		{
 		case false:sprite.move(-dx*game::time, 0); break;
