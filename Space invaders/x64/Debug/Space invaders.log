@@ -1,0 +1,47 @@
+﻿  MainGame.cpp
+  TAplication.cpp
+d:\project\space invaders\space invaders\taplication.cpp(65): warning C4018: <: несоответствие типов со знаком и без знака
+d:\project\space invaders\space invaders\taplication.cpp(88): warning C4018: <: несоответствие типов со знаком и без знака
+d:\project\space invaders\space invaders\taplication.cpp(152): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(152): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(153): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(153): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(183): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(183): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(184): warning C4244: аргумент: преобразование "T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+d:\project\space invaders\space invaders\taplication.cpp(184): warning C4244: аргумент: преобразование "const T" в "int", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  friend_func.cpp
+  Создание кода...
+  Space invaders.vcxproj -> D:\project\Space invaders\x64\Debug\Space invaders.exe
