@@ -48,12 +48,12 @@ void Meteor::MeteorMove(bool speed)
 {
 	switch (speed)
 	{
-	case true:dy = dy + 0.00006; break;
+	case true:dy = dy + 0.00007; break;
 	case false:
 	{
 		if (dy > 0.005)
 		{
-			dy = dy - 0.001;
+			dy = dy - 0.003;
 			if (dy < 0.005)dy = 0.005;
 		}
 		break;
